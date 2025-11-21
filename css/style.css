@@ -60,6 +60,8 @@
 *
 * ======================================================= */
 body {
+    margin: 0;
+  padding: 0;
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -187,11 +189,13 @@ figure figcaption {
 
 #particles-js {
   position: relative;
-  width: 100vw;
+  width: 100%;
   /* Adjust width as needed */
   height: 100vh;
   /* Set height to match the canvas */
+  overflow: hidden;
 }
+
 
 /* Style the overlay text */
 .canvas-text {
@@ -511,7 +515,7 @@ figure figcaption {
   /* Optional padding */
   box-sizing: border-box;
   /* To include padding within the total height */
-
+  top: 0;
 
 }
 
@@ -3221,13 +3225,49 @@ body.offcanvas .colorlib-nav-toggle {
 }
 @media (max-width: 494px) {
      .timeline-label h2 {
-        font-size: 0.9rem !important;   /* adjust to your desired size */
+        font-size: 1.1rem !important;   /* adjust to your desired size */
     }
      .timeline-label .date {
-        font-size: 0.9rem !important;   /* adjust to your desired size */
+        font-size: 1.1rem !important;   /* adjust to your desired size */
     }
     .university a{
-        font-size: 0.7rem !important;   /* adjust to your desired size */
+        font-size: 0.9rem !important;   /* adjust to your desired size */
     }
 }
 
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .canvas-text {
+    padding-left: 0 !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  #colorlib-main {
+    width: 100% !important;
+    padding: 0 1rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .email-info {
+    flex-wrap: wrap !important;
+    white-space: normal !important;
+  }
+  #gotoAbout{
+    bottom: -25px !important;
+  }
+}
+@media (max-width: 768px) {
+  #intro-card {
+    max-width: 90% !important;
+    padding: 30px 15px !important;
+  }
+}
+@media (max-width: 768px) {
+  body.offcanvas #colorlib-main {
+    overflow-x: hidden !important;
+  }
+}
