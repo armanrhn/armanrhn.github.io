@@ -1109,6 +1109,7 @@ body.offcanvas .colorlib-nav-toggle {
   -ms-box-shadow: none !important;
   -o-box-shadow: none !important;
   box-shadow: none !important;
+  padding-right: 40px;
 }
 
 .panel {
@@ -3415,6 +3416,9 @@ body.offcanvas .colorlib-nav-toggle {
   }
 
   .panel-group {
+    font-size: small !important;
+  }
+  .panel-title a{
     font-size: small !important;
   }
 
