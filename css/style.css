@@ -3398,6 +3398,9 @@ body.offcanvas .colorlib-nav-toggle {
     max-width: 90% !important;
     padding: 30px 15px !important;
   }
+  .author-img{
+    display: none !important;
+  }
 }
 
 @media (max-width: 768px) {
